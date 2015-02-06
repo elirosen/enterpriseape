@@ -80,4 +80,8 @@ Rails.application.configure do
 
   # Do not dump schema after migrations.
   config.active_record.dump_schema_after_migration = false
+  
+  #added this based on Jordans advice to solve heroku issue
+  config.action_mailer.raise_delivery_errors = true
+
 end
